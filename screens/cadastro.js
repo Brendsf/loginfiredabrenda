@@ -18,14 +18,14 @@ export default function TelaCadastro({ navigation }) {
   };
 
   return (
-    <View style={estilos.container}>
-      <Text style={estilos.titulo}>Cadastro</Text>
+    <View style={styles.container}>
+      <Text style={styles.titulo}>Cadastro</Text>
 
       <TextInput
         placeholder="Email"
         value={email}
         onChangeText={setEmail}
-        style={estilos.input}
+        style={styles.input}
       />
 
       <TextInput
@@ -33,7 +33,7 @@ export default function TelaCadastro({ navigation }) {
         value={senha}
         onChangeText={setSenha}
         secureTextEntry
-        style={estilos.input}
+        style={styles.input}
       />
 
       <Button title="Cadastrar" onPress={fazerCadastro} />
@@ -41,7 +41,7 @@ export default function TelaCadastro({ navigation }) {
   );
 }
 
-const estilos = StyleSheet.create({
+const styles = StyleSheet.create({
   container: { flex: 1, justifyContent: "center", padding: 20 },
   titulo: { fontSize: 26, textAlign: "center", marginBottom: 20 },
   input: {

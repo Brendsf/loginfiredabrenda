@@ -9,14 +9,14 @@ export default function TelaMenu({ navigation }) {
   };
 
   return (
-    <View style={estilos.container}>
-      <Text style={estilos.titulo}>Bem-vinda(o)!</Text>
+    <View style={styles.container}>
+      <Text style={styles.titulo}>Bem-vinda(o)!</Text>
       <Button title="Sair" onPress={sair} />
     </View>
   );
 }
 
-const estilos = StyleSheet.create({
+const styles = StyleSheet.create({
   container: { flex: 1, justifyContent: "center", alignItems: "center" },
   titulo: { fontSize: 24, marginBottom: 20 },
 });
